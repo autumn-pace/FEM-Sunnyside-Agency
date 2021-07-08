@@ -1,0 +1,141 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  background-color: #fefbf8;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body .underlined-text {
+  font-family: "Fraunces", serif;
+}
+body h1 {
+  text-transform: uppercase;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body a:hover, body a:focus {
+  color: #30343d;
+}
+body .underlined-text {
+  position: relative;
+  z-index: 100;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .underlined-text:after {
+  content: "";
+  background-color: #fdf4b6;
+  height: 0.5rem;
+  width: 110%;
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: -0.1rem;
+  border-radius: 2rem;
+}
+body .underlined-text:nth-child(2n+1):after {
+  background-color: #fddcd4;
+}
+
+header {
+  padding: 2rem 2rem;
+  background-color: #3fbfff;
+}
+header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header .header-wrapper .hamburger-container {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-wrapper .hamburger-container span {
+  width: 50%;
+  border: 1px solid white;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+header .header-wrapper .hamburger-container span:nth-child(1), header .header-wrapper .hamburger-container span:nth-child(2) {
+  top: 0;
+}
+header .header-wrapper .hamburger-container span:nth-child(3), header .header-wrapper .hamburger-container span:nth-child(4) {
+  top: 50%;
+}
+header .header-wrapper .hamburger-container span:nth-child(5), header .header-wrapper .hamburger-container span:nth-child(6) {
+  bottom: 0;
+}
+header .header-wrapper .hamburger-container span:nth-child(even) {
+  left: 0;
+}
+header .header-wrapper .hamburger-container span:nth-child(odd) {
+  right: 0;
+}
+@media (min-width: 1024px) {
+  header .header-wrapper .hamburger-container {
+    display: none;
+  }
+}
+header .header-wrapper .nav-container {
+  position: absolute;
+  right: -450px;
+}
+header .header-wrapper .nav-container .nav-item {
+  padding: 1rem;
+}
+header .header-wrapper .nav-container .nav-item:last-child {
+  background-color: white;
+  color: #30343d;
+  border-radius: 2rem;
+  font-family: "Fraunces", serif;
+}
+@media (min-width: 1024px) {
+  header .header-wrapper .nav-container {
+    right: 0;
+  }
+}
+
+.hero-wrapper {
+  height: 50vh;
+  width: 100%;
+  background-image: url("../images/image-header.jpg");
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #3fbfff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-wrapper .hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6rem;
+}
+.hero-wrapper .hero-container h1 {
+  margin-bottom: 3rem;
+}
+@media (min-width: 1024px) {
+  .hero-wrapper .hero-container h1 {
+    letter-spacing: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=site.css.map */

@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <style>@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');</style>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="sass/site.css">
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,24 +15,53 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+<header>
+  <div class="header-wrapper">
+    <div class="logo-container">
+      <img src="images/logo.svg" alt="Sunnyside Agency logo">
+    </div>
+    <button class="hamburger-container" onclick="openNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-container">
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Services</a>
+      <a href="#" class="nav-item">Projects</a>
+      <a href="#" class="nav-item">Contact</a>
+    </div>
+  </div>
+</header>
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div class="hero-wrapper">
+    <div class="hero-container">
+      <h1>  We are creatives </h1>
+      <a href="#bodySection">
+        <img src="images/icon-arrow-down.svg" alt="arrow pointing down to navigate to new portion of page">
+      </a>
+    </div>
+  </div>
+  <div id="bodySection" class="">
 
-  We are creatives
+  </div>
+
+  <!--
+
 
   Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
+  We are a full-service creative agency specializing in helping brands grow fast.
   Engage your clients through compelling visuals that do most of the marketing for you.
 
   Learn more
 
   Stand out to the right audience
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
 
   Learn more
 
@@ -58,11 +88,16 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<footer>
+</footer>
+<script type="text/javascript" src="js/nav.js">
+
+</script>
 </html>

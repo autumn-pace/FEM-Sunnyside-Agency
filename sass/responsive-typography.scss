@@ -1,0 +1,48 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  background-color: #fefbf8;
+
+  h1,h2,h3,h4,h5,h6, .underlined-text{
+    font-family: 'Fraunces', serif;
+  }
+
+  h1{
+    text-transform: uppercase;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    &:hover,
+    &:focus{
+      color: #30343d;
+    }
+  }
+  .underlined-text{
+    position: relative;
+    z-index: 100;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:after{
+      content: '';
+      background-color: #fdf4b6;
+      height: .5rem;
+      width: 110%;
+      position: absolute;
+      z-index: -1;
+      top: 70%;
+      left: -.1rem;
+      border-radius: 2rem;
+    }
+
+    &:nth-child(2n+1){
+      &:after{
+      background-color: #fddcd4;
+      }
+    }
+  }
+}

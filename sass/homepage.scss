@@ -1,0 +1,28 @@
+.hero-wrapper{
+  height: 50vh;
+  width: 100%;
+  background-image: url('../images/image-header.jpg');
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #3fbfff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6rem;
+
+    h1{
+      margin-bottom: 3rem;
+      @media(min-width: 1024px){
+        letter-spacing: .5rem;
+      }
+    }
+  }
+}
